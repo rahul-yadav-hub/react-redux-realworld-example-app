@@ -3,7 +3,7 @@ import _superagent from 'superagent';
 
 const superagent = superagentPromise(_superagent, global.Promise);
 
-const API_ROOT = process.env.BACKEND_URI;
+const API_ROOT = 'http://rahul-mern-lb-d699e4cfaec1164c.elb.ap-south-1.amazonaws.com:3000/api';
 
 const encode = encodeURIComponent;
 const responseBody = res => res.body;
